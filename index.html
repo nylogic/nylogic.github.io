@@ -3,35 +3,41 @@ layout: default
 title: NYLogic
 ---
 
+<h3><strong>Calendar</strong></h3>
+
 {% assign count=0 %}
 
 {% for post in site.posts  %}
-<p>
-<strong>{{ post.date | date: "%B %e" }}</strong>: 
-{% for item in post.categories %}
-{% assign category=item %}	
-{% if category=="set-theory-seminar" %}
-	<strong><a href="/set-theory-seminar.html">Set Theory Seminar</a></strong>   
-{% elsif category=="logic-workshop" %}
-	<strong><a href="/logic-workshop">Logic Workshop</a></strong>
-{% endif %}
+	<p>
+	<strong>{{ post.date | date: "%B %e" }}</strong>: 
+	{% for item in post.categories %}
+	{% assign category=item %}	
+		{% if category=="set-theory-seminar" %}
+			<strong><a href="/set-theory-seminar.html">Set Theory Seminar</a></strong>   
+		{% elsif category=="logic-workshop" %}
+			<strong><a href="/logic-workshop">Logic Workshop</a></strong>
+		{% elsif category=="model-theory-seminar" %}
+			<strong><a href="/model-theory-seminar">Model Theory Seminar</a></strong>
+		{% elsif category=="MOPA" %}
+			<strong><a href="/MOPA">MOPA Seminar</a></strong>
+		{% endif %}
 	{% endfor %}
-<br><strong>{{post.title}}</strong><br>
+	<br><strong>{{post.title}}</strong><br>
 	{% if post.talk %}
-	{% if post.note %}
-	{{post.note}}
-	{% endif %}
+		{% if post.note %}
+			{{post.note}}
+		{% endif %}
 	
 	
-	{% if post.speaker_website %}
-<strong><a href={{post.speaker_website}} target="_blank">{{post.speaker_first}} {{post.speaker_last}}</a></strong>,
-{% else %}
-{{post.speaker_first}} {{post.speaker_last}},
-{% endif %}
-{{post.affiliation}}<br>
+		{% if post.speaker_website %}
+			<strong><a href={{post.speaker_website}} target="_blank">{{post.speaker_first}} {{post.speaker_last}}</a></strong>,
+		{% else %}
+			{{post.speaker_first}} {{post.speaker_last}},
+		{% endif %}
+		{{post.affiliation}}<br>
 
 
-<strong><a data-toggle="collapse" href="javascript:toggle('{{count}}');">Abstract</a></strong>
+		<strong><a data-toggle="collapse" href="javascript:toggle('{{count}}');">Abstract</a></strong>
 						<div style="display:none" id="{{count}}">
 							{{post.abstract}}
 						</div>
@@ -39,12 +45,12 @@ title: NYLogic
 
 
 
-		{% else %}
+	{% else %}
 		{{post.abstract}}
-{% endif %}
+	{% endif %}
 
-</p>
+	</p>
 
-{% assign count = count | plus: 1 %}
+	{% assign count = count | plus: 1 %}
 {% endfor %}
 
