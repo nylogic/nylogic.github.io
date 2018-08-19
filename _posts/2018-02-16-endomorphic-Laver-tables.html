@@ -1,0 +1,24 @@
+---
+layout: default
+title: Endomoprhic Laver tables
+categories: set-theory-seminar
+date: 2018-02-16
+speaker_first: Joseph 
+speaker_last: Van Name
+speaker_website:
+affiliation: CUNY
+abstract: "The endomorphic Laver tables extend the notion of a classical Laver table to algebraic structures of arbitrary arity and type."
+excerpt_separator: <!--more-->
+talk: yes
+note:
+---
+
+<p><strong>{{ page.date | date: "%B %e" }}</strong><br>
+{% if page.speaker_website %}
+<strong><a href={{page.speaker_website}} target="_blank">{{page.speaker_first}} {{page.speaker_last}}</a></strong>,
+{% else %}
+{{page.speaker_first}} {{page.speaker_last}},
+{% endif %}
+ {{page.affiliation}}<br>
+<strong>{{page.title}}</strong><br>
+{{page.abstract}}</p>

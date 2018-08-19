@@ -1,0 +1,38 @@
+---
+layout: default
+title: Logic Workshop
+---
+
+
+{% assign count=0 %}
+{% for post in site.categories.logic-workshop %}
+<p>
+	{% if post.talk %}
+	{% if post.note %}
+	{{post.note}}
+	{% endif %}
+  	<strong>{{ post.date | date: "%B %e" }}</strong><br>
+	{% if post.speaker_website %}
+<strong><a href={{post.speaker_website}} target="_blank">{{post.speaker_first}} {{post.speaker_last}}</a></strong>,
+{% else %}
+{{post.speaker_first}} {{post.speaker_last}},
+{% endif %}
+{{post.affiliation}}<br>
+<strong>{{post.title}}</strong><br>
+
+<strong><a data-toggle="collapse" href="javascript:toggle('{{count}}');">Abstract</a></strong>
+						<div style="display:none" id="{{count}}">
+							{{post.abstract}}
+						</div>
+
+
+
+
+		{% else %}
+{{post.content}}
+{% endif %}
+
+</p>
+
+{% assign count = count | plus: 1 %}
+{% endfor %}

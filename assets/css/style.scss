@@ -1,0 +1,53 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+a.nav {
+  color: white; }
+
+div#page-header div#header img {
+  width: 206px;
+  /* the width of the logo image */
+  height: 202px;
+  /* the height of the logo image */
+  margin: 0 auto;
+  }
+  
+.figure {
+  width: 50%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.figuresmall {
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.page-header2 {
+  color: #fff;
+  text-align: center;
+  background-color: #159957;
+  background-image: url("/images/nyskyline.jpg"); }
+  
+  @media screen and (min-width: 64em) {
+    .page-header2 {
+      padding: 5rem 6rem; } }
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    .page-header2 {
+      padding: 3rem 4rem; } }
+  @media screen and (max-width: 42em) {
+    .page-header2 {
+      padding: 2rem 1rem; } }
+
