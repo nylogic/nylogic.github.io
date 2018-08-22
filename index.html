@@ -7,7 +7,8 @@ title: NYLogic
 
 {% assign count=0 %}
 
-{% for post in site.posts  %}
+{% for post in site.posts limit: 5 %}
+{% if post.semester=="fall-2018" %}
 	<p>
 	<strong>{{ post.date | date: "%B %e" }}</strong>: 
 	{% for item in post.categories %}
@@ -22,17 +23,16 @@ title: NYLogic
 			<strong><a href="/MOPA">MOPA Seminar</a></strong>
 		{% endif %}
 	{% endfor %}
-	<br><strong>{{post.title}}</strong><br>
-	{% if post.talk %}
-		{% if post.note %}
-			{{post.note}}
+	{% if post.note %}
+			<br>{{post.note}}
 		{% endif %}
-	
+	<br><a href="{{post.url}}"><strong>{{post.talk_title}}</strong></a><br>
+	{% if post.talk %}
 	
 		{% if post.speaker_website %}
 			<strong><a href={{post.speaker_website}} target="_blank">{{post.speaker_first}} {{post.speaker_last}}</a></strong>,
 		{% else %}
-			{{post.speaker_first}} {{post.speaker_last}},
+			<strong>{{post.speaker_first}} {{post.speaker_last}}</strong>,
 		{% endif %}
 		{{post.affiliation}}<br>
 
@@ -52,5 +52,6 @@ title: NYLogic
 	</p>
 
 	{% assign count = count | plus: 1 %}
+	{% endif %}
 {% endfor %}
 

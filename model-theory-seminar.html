@@ -1,44 +1,10 @@
 ---
-layout: default
+layout: seminar
+seminar_title: model-theory-seminar
 title: CUNY Model Theory Seminar
 ---
+
 <p align="center"><strong>CUNY Graduate Center</strong><br>
 <strong>Room 6417</strong><br>
 <strong>Fridays 12:30pm-2:00pm</strong><br>
 <strong>Organized by Alf Dolich</p>
-
-<h3><strong>Calendar</strong></h3>
-
-{% assign count=0 %}
-
-{% for post in site.categories.model-theory-seminar %}
-	<p>
-	<strong>{{ post.date | date: "%B %e" }}</strong><br>
-		{% if post.talk %}
-			{% if post.note %}
-				{{post.note}}
-			{% endif %}
-			{% if post.speaker_website %}
-				<strong><a href={{post.speaker_website}} target="_blank">{{post.speaker_first}} {{post.speaker_last}}</a></strong>,
-			{% else %}
-				{{post.speaker_first}} {{post.speaker_last}},
-			{% endif %}
-			{{post.affiliation}}<br>
-			<strong>{{post.title}}</strong><br>
-
-			<strong><a data-toggle="collapse" href="javascript:toggle('{{count}}');">Abstract</a></strong>
-						<div style="display:none" id="{{count}}">
-							{{post.abstract}}
-						</div>
-
-
-
-
-		{% else %}
-			{{post.abstract}}
-		{% endif %}
-
-	</p>
-
-	{% assign count = count | plus: 1 %}
-{% endfor %}
