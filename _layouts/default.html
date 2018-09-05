@@ -44,8 +44,25 @@ function toggle(id)
 	}
 }
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$('p[date]').each(function(){
+  // create a postDate in a date object
+  var postDate = new Date($(this).attr('date'));
+  // create an object with the date of one week ago
+  var oneWeekAgo = new Date();
+  oneWeekAgo.setDate(oneWeekAgo.getDate()-1);
+  // compare dates and hide old posts
+  if(postDate<oneWeekAgo) $(this).hide();
+});
+
+});
+</script>
+
   </head>
   <body>
+  
     <section class="page-header2">
 	
       <h1 class="project-name">{{ page.title }}</h1>

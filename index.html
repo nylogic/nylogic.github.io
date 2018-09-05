@@ -7,9 +7,9 @@ title: NYLogic
 
 {% assign count=0 %}
 
-{% for post in site.posts limit: 5 %}
+{% for post in site.posts reversed limit: 5 %}
 {% if post.semester=="fall-2018" %}
-	<p>
+	<p date="{{ post.date }}">
 	<strong>{{ post.date | date: "%B %e" }}</strong>: 
 	{% for item in post.categories %}
 	{% assign category=item %}	
