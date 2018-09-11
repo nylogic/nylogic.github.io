@@ -7,7 +7,7 @@ title: NYLogic
 
 {% assign count=0 %}
 
-{% for post in site.posts reversed limit: 5 %}
+{% for post in site.posts reversed %}
 {% if post.semester=="fall-2018" %}
 	<p date="{{ post.date }}">
 	<strong>{{ post.date | date: "%B %e" }}</strong>: 
