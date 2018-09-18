@@ -49,12 +49,16 @@ function toggle(id)
 $(document).ready(function(){
 $('p[date]').each(function(){
   // create a postDate in a date object
-  var postDate = new Date($(this).attr('date'));
+  var d = $(this).attr('date');
+  d=d.slice(0,10);
+  d=d.replace(/-/g, "/");
+  var postDate = new Date(d);
+  
   // create an object with the date of one week ago
   var oneWeekAgo = new Date();
   oneWeekAgo.setDate(oneWeekAgo.getDate()-1);
   // compare dates and hide old posts
-  if(postDate<oneWeekAgo) $(this).hide();
+  if(postDate.getTime()<oneWeekAgo.getTime()) $(this).remove();
 });
 
 });
