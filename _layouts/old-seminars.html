@@ -68,7 +68,7 @@ function toggle(id)
 	<strong>{{ post.date | date: "%B %e" }}</strong><br>
 		{% if post.talk %}
 			{% if post.note %}
-				{{post.note}}
+				{{post.note}}<br>
 			{% endif %}
 			{% if post.speaker_website %}
 				<strong><a href={{post.speaker_website}} target="_blank">{{post.speaker_first}} {{post.speaker_last}}</a></strong>,
@@ -84,14 +84,18 @@ function toggle(id)
 						</div>
 
 
+
+
 		{% else %}
+		<strong>{{post.talk_title}}</strong><br>
 			{{post.abstract}}
 		{% endif %}
 
 	</p>
 
 	{% assign count = count | plus: 1 %}
-{% endif %}
+	
+	{% endif %}
 {% endfor %}
 						
 						

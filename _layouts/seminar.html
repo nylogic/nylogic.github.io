@@ -63,7 +63,7 @@ function toggle(id)
 {% capture seminar %}{{page.seminar_title}}{% endcapture %}
 
 {% for post in site.posts %}
-{% if post.categories contains seminar and post.semester=="fall-2018" %}
+{% if post.categories contains seminar and post.semester=="spring-2019" %}
 	<p>
 	<strong>{{ post.date | date: "%B %e" }}</strong><br>
 		{% if post.talk %}
@@ -100,8 +100,11 @@ function toggle(id)
 
 {% assign sem1="-spring-2018.html" %}
 {% capture link1 %} {{seminar}}{{sem1}} {% endcapture %}
+{% assign sem2="-fall-2018.html" %}
+{% capture link2 %} {{seminar}}{{sem2}} {% endcapture %}
 <h3><strong>Previous Semesters</strong></h3>
 <ul>
+<li><a href="{{ link2 }}">Fall 2018</a></li>
 <li><a href="{{ link1 }}">Spring 2018</a></li>
 </ul>
 
