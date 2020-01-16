@@ -8,7 +8,7 @@ title: NYLogic
 {% assign count=0 %}
 
 {% for post in site.posts reversed %}
-{% if post.semester=="fall-2019" %}
+{% if post.semester=="spring-2020" %}
 	<p date="{{ post.date }}">
 	<strong>{{ post.date | date: "%B %e" }}</strong>: 
 	{% for item in post.categories %}
