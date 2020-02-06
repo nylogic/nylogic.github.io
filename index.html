@@ -27,12 +27,12 @@ title: NYLogic
 			<br>{{post.note}}
 		{% endif %}
 	<br><a href="{{post.url}}"><strong>{{post.talk_title}}</strong></a><br>
-	{% if post.talk %}
 	
+	{% if post.talk %}
 		{% if post.speaker_website %}
-			<strong><a href={{post.speaker_website}} target="_blank">{{post.speaker_first}} {{post.speaker_last}}</a></strong>,
+			<strong><a href={{post.speaker_website}} target="_blank">{{post.speaker_first}} {{post.speaker_last}}</a></strong>
 		{% else %}
-			<strong>{{post.speaker_first}} {{post.speaker_last}}</strong>,
+			<strong>{{post.speaker_first}} {{post.speaker_last}}</strong>
 		{% endif %}
 		{{post.affiliation}}<br>
 
@@ -41,8 +41,6 @@ title: NYLogic
 						<div style="display:none" id="{{count}}">
 							{{post.abstract}}
 						</div>
-
-
 
 
 	{% else %}

@@ -71,9 +71,9 @@ function toggle(id)
 				{{post.note}}<br>
 			{% endif %}
 			{% if post.speaker_website %}
-				<strong><a href={{post.speaker_website}} target="_blank">{{post.speaker_first}} {{post.speaker_last}}</a></strong>,
+				<strong><a href={{post.speaker_website}} target="_blank">{{post.speaker_first}} {{post.speaker_last}}</a></strong>
 			{% else %}
-				<strong>{{post.speaker_first}} {{post.speaker_last}}</strong>,
+				<strong>{{post.speaker_first}} {{post.speaker_last}}</strong>
 			{% endif %}
 			{{post.affiliation}}<br>
 			<a href="{{post.url}}"><strong>{{post.talk_title}}</strong></a><br>
