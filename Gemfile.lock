@@ -73,6 +73,7 @@ DEPENDENCIES
   jekyll (~> 3)
   jekyll-feed (~> 0.6)
   jekyll-theme-cayman
+  kramdown (>= 2.3.0)
   kramdown-parser-gfm
   minima (~> 2.0)
   tzinfo-data
