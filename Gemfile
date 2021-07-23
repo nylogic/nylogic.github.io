@@ -35,3 +35,6 @@ gem "kramdown-parser-gfm"
 
 gem "kramdown", ">= 2.3.0"
 
+gem "rexml", ">= 3.2.5"
+
+gem "addressable", ">= 2.8.0"
