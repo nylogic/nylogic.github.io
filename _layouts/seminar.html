@@ -63,7 +63,7 @@ function toggle(id)
 {% capture seminar %}{{page.seminar_title}}{% endcapture %}
 
 {% for post in site.posts %}
-{% if post.categories contains seminar and post.semester=="spring-2020" %}
+{% if post.categories contains seminar and post.semester=="fall-2022" %}
 	<p>
 	<strong>{{ post.date | date: "%B %e" }}</strong><br>
 		{% if post.talk %}
@@ -107,12 +107,33 @@ function toggle(id)
 
 {% assign sem4="-fall-2019.html" %}
 {% capture link4 %} {{seminar}}{{sem4}} {% endcapture %}
+
+{% assign sem5="-spring-2020.html" %}
+{% capture link5 %} {{seminar}}{{sem5}} {% endcapture %}
+
+{% assign sem6="-fall-2020.html" %}
+{% capture link6 %} {{seminar}}{{sem6}} {% endcapture %}
+
+{% assign sem7="-spring-2021.html" %}
+{% capture link7 %} {{seminar}}{{sem7}} {% endcapture %}
+
+{% assign sem8="-fall-2021.html" %}
+{% capture link8 %} {{seminar}}{{sem8}} {% endcapture %}
+
+{% assign sem9="-spring-2022.html" %}
+{% capture link9 %} {{seminar}}{{sem9}} {% endcapture %}
 <h3><strong>Previous Semesters</strong></h3>
 <ul>
+<li><a href="{{ link9 }}">Spring 2022</a></li>
+<li><a href="{{ link8 }}">Fall 2021</a></li>
+<li><a href="{{ link7 }}">Spring 2021</a></li>
+<li><a href="{{ link6 }}">Fall 2020</a></li>
+<li><a href="{{ link5 }}">Spring 2020</a></li>
 <li><a href="{{ link4 }}">Fall 2019</a></li>
 <li><a href="{{ link3 }}">Spring 2019</a></li>
 <li><a href="{{ link2 }}">Fall 2018</a></li>
 <li><a href="{{ link1 }}">Spring 2018</a></li>
+
 </ul>
 
       <footer class="site-footer">
