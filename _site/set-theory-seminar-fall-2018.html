@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Set Theory Seminar | NYlogic</title>
+<meta name="generator" content="Jekyll v3.9.1" />
+<meta property="og:title" content="Set Theory Seminar" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="CUNY Logic Seminars" />
+<meta property="og:description" content="CUNY Logic Seminars" />
+<link rel="canonical" href="http://localhost:4000/set-theory-seminar-fall-2018.html" />
+<meta property="og:url" content="http://localhost:4000/set-theory-seminar-fall-2018.html" />
+<meta property="og:site_name" content="NYlogic" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Set Theory Seminar" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/set-theory-seminar-fall-2018.html","description":"CUNY Logic Seminars","headline":"Set Theory Seminar","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+<script type="text/javascript">
+function toggle(id)
+{
+	div=document.getElementById(id);
+	style=div.style.display;
+	if(style=="block")
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','none','');
+		}
+		else
+		{
+			div.style.setAttribute('display','none');
+		}
+	}
+	else
+	{
+		if(div.style.setProperty)
+		{
+			div.style.setProperty('display','block','');
+		}
+		else
+		{
+			div.style.setAttribute('display','block');
+		}
+	}
+}
+</script>
+  </head>
+  <body>
+    <section class="page-header2">
+	
+      <h1 class="project-name">Set Theory Seminar</h1>
+	  <a href="/" class="nav">NYLogic</a> &nbsp;&nbsp;<a href="/set-theory-seminar.html" class="nav">Set Theory Seminar</a> &nbsp;&nbsp; <a href="/model-theory-seminar.html" class="nav">Model Theory Seminar</a> &nbsp;&nbsp; <a href="/logic-workshop.html" class="nav">Logic Workshop</a> 
+	    &nbsp;&nbsp; <a href="/MOPA.html" class="nav">MOPA</a>&nbsp;&nbsp; <a href="/MAMLS.html" class="nav">MAMLS</a>
+      	    
+    </section>
+
+    <section class="main-content">
+      <p align="center"><strong>CUNY Graduate Center</strong><br>
+<strong>Room 6417</strong><br>
+<strong>Fridays 10:00am-12:00pm</strong><br>
+<strong>Organized by <a href="http://victoriagitman.github.io" target="_blank">Victoria Gitman</a> and <a href="https://coreyswitzer.wordpress.com/">Corey Switzer</a></strong></p>
+
+<h3><strong>Fall 2018</strong></h3>
+
+
+	  
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<p>
+	<strong>December 14</strong><br>
+		
+			
+			
+				<strong><a href=https://victoriagitman.github.io/ target="_blank">Victoria Gitman</a></strong>
+			
+			CUNY<br>
+			<a href="/set-theory-seminar/2018/12/14/the-stable-core.html"><strong>The stable core</strong></a><br>
+
+			<strong><a data-toggle="collapse" href="javascript:toggle('0');">Abstract</a></strong>
+						<div style="display:none" id="0">
+							<p> Sy Friedman introduced an inner model, which he called the <em>stable core</em>, in order to study under what circumstances the universe $V$ is a class forcing extension of ${&#92;rm HOD}$. He showed there is a definable predicate $S$, amenable to ${&#92;rm HOD}$, such that $V$ is a class forcing extension of the structure $&#92;langle {&#92;rm HOD},&#92;in,S&#92;rangle$. Namely, there is an ${&#92;rm ORD}$-cc class partial order $&#92;mathbb P$ definable in $&#92;langle {&#92;rm HOD},&#92;in,S&#92;rangle$ and a generic filter $G&#92;subseteq &#92;mathbb P$ such that ${&#92;rm HOD}[G]=V$, however the filter $G$ itself is not definable over $V$. The predicate $S$, consisting of triples $(&#92;alpha,&#92;beta,n)$ for $&#92;alpha$ and $&#92;beta$ strong limit cardinals and $n&#92;geq 1$ such that $H_&#92;alpha&#92;prec_{&#92;Sigma_n}H_&#92;beta$ and $&#92;Sigma_n$-collection holds in $H_&#92;beta$, codes elementarity relations between nice enough initial segments $H_&#92;alpha$ of $V$. Friedman's argument showed that the information necessary to define $&#92;mathbb P$ is already contained in $S$ so that $V$ is already a class forcing extension of the stable core $&#92;langle L[S],&#92;in,S&#92;rangle$.</p>
+<p>In a joint work with Friedman and Sandra Müller, we investigated the properties of the stable core. We were interested to see whether the stable core is in any sense a canonical inner model, whether it has regularity properties, whether it is consistent with large cardinals, and whether we can code information into it using forcing. We showed that the stable core of $L[&#92;mu]$, the canonical model for a single measurable cardinal, is $L[&#92;mu]$ and therefore measurable cardinals are consistent with the stable core. By coding generic sets into the stable core over $L$ or $L[&#92;mu]$, we showed that there is a generic extension of $L$ in which the ${&#92;rm GCH}$ fails at every regular cardinal in the stable core and there is a generic extension of $L[&#92;mu]$ in which there is a measurable cardinal which is not even weakly compact in the stable core. Our work leaves numerous open questions about the structure of the stable core in the presence of large cardinals beyond a measurable cardinal. </p>
+						</div>
+
+
+
+
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+	<p>
+	<strong>November 30</strong><br>
+		
+			
+			
+				<strong><a href=http://www.math.harvard.edu/~nate/ target="_blank">Nate Ackerman</a></strong>
+			
+			Harvard University<br>
+			<a href="/set-theory-seminar/2018/11/30/cute-and-cuddly-topoi-and-the-models-that-live-in-them.html"><strong>Cute and Cuddly Topoi And The Models That Live In Them</strong></a><br>
+
+			<strong><a data-toggle="collapse" href="javascript:toggle('1');">Abstract</a></strong>
+						<div style="display:none" id="1">
+							<p> Topoi are fundamental mathematical objects which lie at the crossroads between set theory, model theory, algebraic geometry and topology. One of the many ways of viewing a topos is as a mathematical universe with enough structure to contain models of first order theories. In this talk I will provide a gentle introduction to topoi. I will give several examples and walk through the basic properties that topoi possess which ensure they contain models of first order theories. </p>
+						</div>
+
+
+
+
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+
+
+
+
+	<p>
+	<strong>November 16</strong><br>
+		
+		<strong>Seminar cancelled</strong><br>
+			
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+
+
+	<p>
+	<strong>November  9</strong><br>
+		
+		<strong>Seminar cancelled</strong><br>
+			
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+	<p>
+	<strong>November  2</strong><br>
+		
+		<strong>Seminar cancelled</strong><br>
+			MathFest conference at the Graduate Center.
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+	<p>
+	<strong>October 26</strong><br>
+		
+			
+			
+				<strong>Gabriel Goldberg</strong>
+			
+			Harvard University<br>
+			<a href="/set-theory-seminar/2018/10/26/strongly-tall-cardinals.html"><strong>Strongly tall cardinals</strong></a><br>
+
+			<strong><a data-toggle="collapse" href="javascript:toggle('5');">Abstract</a></strong>
+						<div style="display:none" id="5">
+							<p> An uncountable cardinal $&#92;kappa$ is strongly tall if it can be mapped arbitrarily high by ultrapower embeddings with critical point $&#92;kappa$. Hamkins asked whether all strongly tall cardinals are strongly compact. We give a positive answer assuming GCH and discuss recent work of Gitik that shows that this cardinal arithmetic assumption is necessary. </p>
+						</div>
+
+
+
+
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+	<p>
+	<strong>October 19</strong><br>
+		
+			
+			
+				<strong><a href=http://sasander.wixsite.com/academic target="_blank">Sam Sanders</a></strong>
+			
+			TU Darmstadt/University of Leeds<br>
+			<a href="/set-theory-seminar/2018/10/19/from-zero-to-second-order-arithmetic-via-metastability-or-uniformity.html"><strong>From zero to second-order arithmetic via metastability or uniformity</strong></a><br>
+
+			<strong><a data-toggle="collapse" href="javascript:toggle('6');">Abstract</a></strong>
+						<div style="display:none" id="6">
+							<p> Tao’s metastability, going back to Kreisel and Goedel, is a notion of convergence with nice computational properties. The trade-off involved in metastability is that one obtains uniform and effective information, but only about a finite (but arbitrarily large) domain. We apply this metastability trade-off, i.e. introducing finite domains to yield uniform and effective results, to concepts other than convergence.  This results in theorems requiring full second order arithmetic for a proof.  We obtain similar results for another notion inspired by proof theory, namely uniform theorems, in which the objects claimed to exist depend on few of the parameters in the theorem. </p>
+						</div>
+
+
+
+
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+
+
+	<p>
+	<strong>October 12</strong><br>
+		
+			
+			
+				<strong>Miha Habič</strong>
+			
+			Czech Technical University in Prague/Charles University<br>
+			<a href="/set-theory-seminar/2018/10/12/surgery-and-generic-coding.html"><strong>Surgery and generic coding</strong></a><br>
+
+			<strong><a data-toggle="collapse" href="javascript:toggle('7');">Abstract</a></strong>
+						<div style="display:none" id="7">
+							<p> There has been some interest recently in nonamalgamability phenomena between countable models of set theory, and forcing extensions of a fixed model in particular. Nonamalgamability is typically achieved by coding some forbidden object between a collection of models in such a way that each model on its own remains oblivious, but some combination of them can recover the forbidden information. </p>
+<p>In this talk we will examine the problem of coding arbitrary information into a generic filter, focusing on two particular examples. First, I will present some results of joint work with Jonathan Verner where we consider surgical modifications to Cohen reals and sets of indices where such modifications are always possible. Later, I will discuss a recent result of S. Friedman and Hathaway where they achieve, using different coding, nonamalgamability between arbitrary countable models of set theory of the same height. </p>
+						</div>
+
+
+
+
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+
+
+	<p>
+	<strong>October  5</strong><br>
+		
+			
+			
+				<strong><a href=https://homepage.univie.ac.at/david.schrittesser/ target="_blank">David Schrittesser</a></strong>
+			
+			Kurt Gödel Research Center<br>
+			<a href="/set-theory-seminar/2018/10/05/the-ramsey-property.html"><strong>The Ramsey property, MAD families, and their multidimensional relatives</strong></a><br>
+
+			<strong><a data-toggle="collapse" href="javascript:toggle('8');">Abstract</a></strong>
+						<div style="display:none" id="8">
+							<p> Suppose every (definable) set of real numbers has the Ramsey property and (definable) relations on the real numbers can be uniformized by a function on a set which is comeager in the Ellentuck topology. Then there are no (definable) MAD families. As it turns out, there are also no (fin x fin)-MAD families, where fin x fin is the two-dimensional Fubini product of the ideal of finite sets. We also comment on work in progress regarding higher dimensional products. All results are joint work with Asger Törnquist. </p>
+						</div>
+
+
+
+
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+
+
+	<p>
+	<strong>September 28</strong><br>
+		
+			
+			
+				<strong><a href=https://coreyswitzer.wordpress.com/ target="_blank">Corey Switzer</a></strong>
+			
+			CUNY<br>
+			<a href="/set-theory-seminar/2018/09/28/models-of-scfa-violating-ch.html"><strong>Models of SCFA Violating CH</strong></a><br>
+
+			<strong><a data-toggle="collapse" href="javascript:toggle('9');">Abstract</a></strong>
+						<div style="display:none" id="9">
+							<p> We will present our recent work on Jensen's class of subcomplete forcing notions and some of its variants. Of particular interest to us will be models of the Subcomplete Forcing Axiom, SCFA. This axiom implies many of the more striking consequences of MM such as SCH and the failure of $&#92;square_&#92;kappa$ for all uncountable $&#92;kappa$ (both of which are due to Jensen). However, in stark contrast to MM (and its weaker variants like PFA and MA), the natural model of SCFA satisfies not only CH but in fact $&#92;diamondsuit$. As a result SCFA is consistent with many of the consequences of $&#92;diamondsuit$ often ruled out by forcing axioms such as the existence of Souslin trees. Indeed it seems that nearly all consequences of MM that are known not to follow from SCFA do not follow simply because of the consistency of SCFA with $&#92;diamondsuit$ or CH. This leads to many questions of the form&#58; given a statement that is consistent with SCFA, but inconsistent with MM, is it equivalent to CH or $&#92;diamondsuit$ modulo ZFC $+$ SCFA? For example, does SCFA + $&#92;neg$CH imply there are no Souslin trees? </p>
+<p>In our talk we will show that the answer to this question and many related ones is 'no'. Our proof introduces two new classes of forcings notions, called $&#92;infty$-subproper and $&#92;infty$-subcomplete respectively, which generalize Jensen's original discoveries. Each class is iterable by nice iterations in the sense of Miyamoto. We'll discuss these results as well as show how to use the iteration theorems to construct several new models of SCFA $+$ $&#92;neg$CH, many of which are as striking as the natural model of SCFA $+$ $&#92;diamondsuit$. This includes models of SCFA $+$ $&#92;neg$CH with Souslin trees and models of SCFA where $&#92;mathfrak{d} = &#92;aleph_1 < &#92;mathfrak{c} = &#92;aleph_2$. No previous knowledge of subversion forcing or nice iterations will be assumed. This is joint work with Gunter Fuchs. </p>
+						</div>
+
+
+
+
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+
+
+	<p>
+	<strong>September 21</strong><br>
+		
+		<strong>Seminar cancelled</strong><br>
+			
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+	<p>
+	<strong>September 14</strong><br>
+		
+		<strong>Seminar cancelled</strong><br>
+			
+		
+
+	</p>
+
+	
+	
+	
+
+
+	<p>
+	<strong>September  7</strong><br>
+		
+			
+			
+				<strong><a href=https://muellersandra.github.io/ target="_blank">Sandra Müller</a></strong>
+			
+			Kurt Gödel Research Center<br>
+			<a href="/set-theory-seminar/2018/09/07/how-to-obtain-woodin-cardinals-from-the-determinacy-of-large-games.html"><strong>How to obtain Woodin cardinals from the determinacy of long games</strong></a><br>
+
+			<strong><a data-toggle="collapse" href="javascript:toggle('12');">Abstract</a></strong>
+						<div style="display:none" id="12">
+							<p>We will study infinite two player games and the large cardinal strength corresponding to their determinacy. For games of length $&#92;omega$ this is well understood and there is a tight connection between the determinacy of projective games and the existence of canonical inner models with Woodin cardinals. For games of arbitrary countable length, Itay Neeman proved the determinacy of analytic games of length $&#92;omega &#92;cdot &#92;theta$ for countable $&#92;theta&#92;> &#92;omega$ from a sharp for $&#92;theta$ Woodin cardinals. We aim for a converse at successor ordinals and sketch how to obtain $&#92;omega+n$ Woodin cardinals from the determinacy of $&#92;boldsymbol&#92;Pi^1_{n+1}$ games of length $&#92;omega^2$. Moreover, we outline how to generalize this to construct a model with $&#92;omega+&#92;omega$ Woodin cardinals from the determinacy games of length $&#92;omega^2$ with $&#92;Game^{&#92;mathbb{R}}&#92;boldsymbol&#92;Pi^1_1$ payoff.<br> This is joint work with Juan P. Aguilera. </p>
+						</div>
+
+
+
+
+		
+
+	</p>
+
+	
+	
+	
+
+
+	<p>
+	<strong>August 31</strong><br>
+		
+			
+			
+				<strong><a href=https://www.math.csi.cuny.edu/~fuchs/ target="_blank">Gunter Fuchs</a></strong>
+			
+			CUNY<br>
+			<a href="/set-theory-seminar/2018/08/31/bounded-forcing-axioms.html"><strong>What is the bounded forcing axiom for countably closed forcing?</strong></a><br>
+
+			<strong><a data-toggle="collapse" href="javascript:toggle('13');">Abstract</a></strong>
+						<div style="display:none" id="13">
+							<p>I will give an overview over the theory of bounded forcing axioms, and explore some that are compatible with the continuum hypothesis. One of these is an axiom I propose to call the bounded forcing axiom for countably closed forcing (which at first may sound like an absurd concept, since already $MA_{&#92;omega_1}$ for countably closed forcing is a theorem of ZFC). I will then focus on the bounded forcing axiom for subcomplete forcing (BSCFA), and show a result that was obtained in joined work with Kaethe Minden, that in the presence of CH, this axiom is equivalent to the absoluteness of the set of branches of any tree of height and width $&#92;omega_1$. Time permitting, I may also mention some 'predicative' strengthenings of bounded forcing axioms whose versions for subcomplete forcing allow us to conclude the existence of a definable well-order of the power set of $&#92;omega_1$, assuming the mantle is a ground. </p>
+						</div>
+
+
+
+
+		
+
+	</p>
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+						
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.<br>
+		Webmaster: <a href="http://victoriagitman.github.io">Victoria Gitman</a>
+		
+		</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
