@@ -62,7 +62,7 @@ function toggle(id)
 {% assign count=0 %}
 {% capture seminar %}{{page.seminar_title}}{% endcapture %}
 
-{% for post in site.posts %}
+{% for post in site.posts reversed %}
 {% if post.categories contains seminar and post.semester=="spring-2024" %}
 	<p>
 	<strong>{{ post.date | date: "%B %e" }}</strong><br>
