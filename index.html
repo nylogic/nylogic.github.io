@@ -23,6 +23,8 @@ title: NYLogic
 			<strong><a href="/MOPA">MOPA</a></strong>
 		{% elsif category=="computability-seminar" %}
 			<strong><a href="/computability-seminar">Computability Seminar</a></strong>
+		{% else %}
+		<strong>{{category}}</strong>
 		{% endif %}
 	{% endfor %}
 	{% if post.note %}
